@@ -1,0 +1,33 @@
+@use 'utils'
+@use 'base'
+@use 'components'
+@use 'utils/mixins' as mixins
+@use 'utils/variable' as variable
+@use "sass:color"
+
+html,body
+    height: 100%
+#root
+    max-height: 100vh
+    max-width: 1440px
+    height: 100%
+    margin: 0 auto
+    font-family: 'League Spartan', sans-serif
+.container
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: variable.$second-default-color
+    &::before
+        content: ''
+        width: 100%
+        max-width: 1440px
+        height: 150px
+        z-index: 1
+        background-color: variable.$primary-default-color
+        background-position: left
+        background-size: cover
+        background-image: url(../images/bg-header-mobile.svg)
+        @include mixins.breakpoint(pad)
+            background-image: url(../images/bg-header-desktop.svg)

@@ -1,0 +1,9 @@
+@use '../utils/mixins' as mixins
+.tagList
+    display: flex
+    flex-flow: row wrap
+    gap: 10px
+    flex: .8
+    @include mixins.breakpoint(pad)
+        justify-content: flex-end
+        align-content: center

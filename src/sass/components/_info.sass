@@ -1,0 +1,66 @@
+@use '../utils/variable' as variable
+@use '../utils/mixins' as mixins
+.info
+    display: flex
+    align-items: center
+    border-bottom: 1px solid variable.greyscale(50)
+    padding-bottom: 16px
+    box-sizing: border-box
+    flex: 1
+    @include mixins.breakpoint(pad)
+        border-bottom: unset
+        padding-bottom: 0
+    &__avatar
+        width: 48px
+        height: 48px
+        position: absolute
+        top: -24px
+        left: 24px
+
+        @include mixins.breakpoint(pad)
+            position: unset
+            width: 96px
+            height: 96px
+            margin-right: 32px
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 12px
+        flex: 1
+
+.content
+    &__header
+        display: flex
+        gap: 16px
+        align-items: center
+        flex-wrap: wrap
+        &-title
+            padding-top: 4px
+            font-size: 18px
+            color: variable.$primary-default-color
+            font-weight: 500
+    &__body
+        font-weight: bold
+        font-size: 22px
+        transition: color .3s ease-in-out
+        &:hover
+            color: variable.$primary-default-color
+    &__footer
+        display: flex
+        color: variable.greyscale(50)
+        font-size: 14px
+        flex: 1
+        span
+            display: flex
+            align-items: center
+            &:not(:first-child)
+                margin-left: 8px
+            &:not(:last-child)::after
+                content: ''
+                display: inline-block
+                margin: 0 auto
+                width: 4px
+                height: 4px
+                border-radius: 50%
+                background: variable.greyscale(50)
+                margin-left: 8px

@@ -1,0 +1,45 @@
+@use '../utils/variable' as variable
+
+%tag-round
+    border-radius: 20px
+    text-transform: uppercase
+    color: variable.greyscale(100)
+    padding: 4px 8px
+%tag-square
+    border-radius: 5px
+    color: variable.$primary-default-color
+    font-weight: bold
+
+.tag
+    display: flex
+    background-color: variable.$second-default-color
+    overflow: hidden
+    &__text
+        flex: 1 1 auto
+        padding: 8px 16px
+    &__remove
+        background-color: variable.$primary-default-color
+        width: 32px
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        transition: background-color .3s ease-in-out
+        &:hover
+            background-color: variable.$black
+            color: variable.greyscale(100)
+    &.square
+        @extend %tag-square
+        &:not(.selected)
+            cursor: pointer
+            &:hover
+                background-color: variable.$primary-default-color
+                color: variable.greyscale(100)
+    &.round
+        @extend %tag-round
+        &.new
+            font-size: 14px
+            background-color: variable.$primary-default-color
+        &.features
+            font-size: 14px
+            background-color: variable.greyscale(0)
