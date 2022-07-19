@@ -32,8 +32,8 @@ Any feedback for me, I would apperciate you.
 
 ### Screenshot
 
-![destop demo](../image/desktop.png)
-![mobile demo](../image/mobile.png)
+![destop demo](/image/desktop.png)
+![mobile demo](/image/mobile.png)
 
 ### Links
 
