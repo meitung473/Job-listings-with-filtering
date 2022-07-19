@@ -4,109 +4,75 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Frontend Mentor - Job listings with filtering solution](#frontend-mentor---job-listings-with-filtering-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+Hi, I am Rosa Hong.
+I build this project with React class component + Sass + Webpack5 + Flow-type.
+This is my first time using Flow.js to check type.
+I know that using TypeScript is more common in a modern project. 
+Just for my first approach to the type checker, I choose Flow-type.
+TypeScript will be my goal for the next project.
 
-### The challenge
+I have learned React in an online course for six months.
+I spent most of my time on JavaScript fundamentals🥲.
+Web tech changes too fast to learn at first. 
 
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Filter job listings based on the categories
+Any feedback for me, I would apperciate you.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![destop demo](../image/desktop.png)
+![mobile demo](../image/mobile.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://meitung473.github.io/Job-listings-with-filtering)
 
 ## My process
+1. redesign on figma for practicing. (I am free account,just for practicing) [👉see my prototype](https://www.figma.com/proto/rijg7xTRRrLR1So4w0O7iN/Frontend-mentor-Files?page-id=318%3A447&node-id=403%3A356&viewport=224%2C470%2C0.1&scaling=contain&starting-point-node-id=403%3A356&show-proto-sidebar=1)
+2. install library
+3. set up Webpack
+4. just code it !
+5. Flow-type for type check
+6. optimize code I could 😣
 
 ### Built with
-
 - Semantic HTML5 markup
-- CSS custom properties
+- Sass
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Webpack5 : with many plugins and loaders
+- Flow type : Facebook's type checker
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- how to set up custom Webpack5
+- svg component in React class component : use svgr
+- prevent re-render problem using lifecycle method in class component
+- how to use Flow-type for type check
+- how to optimize project : 
+  - Webpack minize (css and javascript)
+  - split prod and dev enviroment
+  - dev-server 
+  - different type of SourceMaps and how to apply in dev enviroment 
 
 ### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- Webpack official
+- [Chinese Webapck4 tutorial best ever 💯](https://awdr74100.github.io/categories/Webpack/):  - it's helps me a lots that shows examples in project.
 
 ## Author
+- Website - [Rosa Hong](https://blog.rosa.tw/)
+- Frontend Mentor - [@meitung473](https://www.frontendmentor.io/profile/meitung473)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
