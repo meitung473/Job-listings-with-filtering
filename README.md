@@ -37,8 +37,8 @@ Any feedback for me, I would apperciate you.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://meitung473.github.io/Job-listings-with-filtering)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/react-class-component-with-sass-webpack-flowtype-KwBy6ilzeV)
+- Live Site URL: [Add live site URL here](https://meitung473.github.io/Job-listings-with-filtering/dist)
 
 ## My process
 1. redesign on figma for practicing. (I am free account,just for practicing) [👉see my prototype](https://www.figma.com/proto/rijg7xTRRrLR1So4w0O7iN/Frontend-mentor-Files?page-id=318%3A447&node-id=403%3A356&viewport=224%2C470%2C0.1&scaling=contain&starting-point-node-id=403%3A356&show-proto-sidebar=1)
