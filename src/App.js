@@ -90,12 +90,11 @@ class App extends React.Component<Props, State> {
                         let show;
                         let filterData;
                         let jobitemclassName;
-                        if (
-                            !isSelected ||
-                            data2Info(data).tags.includes(
-                                ...this.state.filterTag
-                            )
-                        ) {
+                        let itemselected = this.state.filterTag.every((f) =>
+                            data2Info(data).tags.includes(f)
+                        );
+
+                        if (!isSelected || itemselected) {
                             show = true;
                             filterData = data2Info(data);
                             jobitemclassName = `jobItem ${

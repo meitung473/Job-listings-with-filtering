@@ -174,13 +174,15 @@ var App = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
         className: "jobList ".concat(isSelected ? "filter" : "")
       }, this.state.data.map(function (data) {
-        var _data2Info$tags;
-
         var show;
         var filterData;
         var jobitemclassName;
 
-        if (!isSelected || (_data2Info$tags = (0,_convert__WEBPACK_IMPORTED_MODULE_3__/* .data2Info */ .H)(data).tags).includes.apply(_data2Info$tags, _toConsumableArray(_this3.state.filterTag))) {
+        var itemselected = _this3.state.filterTag.every(function (f) {
+          return (0,_convert__WEBPACK_IMPORTED_MODULE_3__/* .data2Info */ .H)(data).tags.includes(f);
+        });
+
+        if (!isSelected || itemselected) {
           show = true;
           filterData = (0,_convert__WEBPACK_IMPORTED_MODULE_3__/* .data2Info */ .H)(data);
           jobitemclassName = "jobItem ".concat(filterData["new"] && filterData.featured ? "all" : "");
@@ -358,13 +360,15 @@ var App = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
         className: "jobList ".concat(isSelected ? "filter" : "")
       }, this.state.data.map(function (data) {
-        var _data2Info$tags;
-
         var show;
         var filterData;
         var jobitemclassName;
 
-        if (!isSelected || (_data2Info$tags = (0,_convert__WEBPACK_IMPORTED_MODULE_3__/* .data2Info */ .H)(data).tags).includes.apply(_data2Info$tags, _toConsumableArray(_this3.state.filterTag))) {
+        var itemselected = _this3.state.filterTag.every(function (f) {
+          return (0,_convert__WEBPACK_IMPORTED_MODULE_3__/* .data2Info */ .H)(data).tags.includes(f);
+        });
+
+        if (!isSelected || itemselected) {
           show = true;
           filterData = (0,_convert__WEBPACK_IMPORTED_MODULE_3__/* .data2Info */ .H)(data);
           jobitemclassName = "jobItem ".concat(filterData["new"] && filterData.featured ? "all" : "");
@@ -1758,4 +1762,4 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.22509d48.map
+//# sourceMappingURL=main.b5480ee7.map
