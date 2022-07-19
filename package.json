@@ -4,11 +4,13 @@
   "description": "![Design preview for the Job listings with filtering coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --mode development --open --hot",
-    "build": "webpack --mode development",
-    "start": "webpack --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "prevdev": "webpack serve --mode development --open --hot",
+    "dev": "webpack serve --config ./build/webpack.dev.conf.js --open --hot",
+    "build": "webpack --config ./build/webpack.prod.conf.js ",
+    "prevbuild": "webpack --mode development",
+    "prevstart": "webpack --mode development",
     "rebuild": "babel src/ -d lib/",
+    "prepublish": "npm run build",
     "flow": "flow"
   },
   "author": "",
@@ -32,6 +34,7 @@
     "autoprefixer": "^10.4.7",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
@@ -47,6 +50,7 @@
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
-    "webpack-dev-server": "^4.9.3"
+    "webpack-dev-server": "^4.9.3",
+    "webpack-merge": "^5.8.0"
   }
 }

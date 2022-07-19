@@ -1,14 +1,14 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const devMode = process.env.NODE_ENV !== "production";
-
 module.exports = {
+    context: path.resolve(__dirname, "../"),
     entry: "./src/index.js",
     output: {
-        path: path.join(__dirname, "dist"),
-        filename: "bundle.[fullhash].js",
+        path: path.join(__dirname, "../dist"),
+        filename: "js/[name].[contenthash:8].js",
+        sourceMapFilename: "js/[name].[contenthash:8].map",
+        chunkFilename: "js/[name].[contenthash:8].chunk.js",
         assetModuleFilename: "images/[hash][ext][query]",
     },
     module: {
@@ -21,30 +21,6 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: "babel-loader",
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    devMode ? "style-loader" : MiniCssExtractPlugin.loader,
-                    {
-                        loader: "css-loader",
-                        options: {
-                            importLoaders: 2,
-                        },
-                    },
-                    {
-                        loader: "postcss-loader",
-                    },
-                    {
-                        loader: "resolve-url-loader",
-                    },
-                    {
-                        loader: "sass-loader",
-                        options: {
-                            sourceMap: true,
-                        },
-                    },
-                ],
             },
             {
                 test: /\.(png|jp(e*)g|gif)$/i,
@@ -80,9 +56,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: "./index.html",
-        }),
-        new MiniCssExtractPlugin({
-            filename: "css/[name].[fullhash].css",
         }),
         new CleanWebpackPlugin(),
     ],
